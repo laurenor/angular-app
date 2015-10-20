@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <link rel="stylesheet" href="public/css/app.css">
+  </head>
+  <body>
+    <div ng-controller="TestCtrl">
+      <h1>{{ title }}</h1>
+      <input type="text" ng-model="title" placeholder="write a title here">
+    </div>
+
+    <div>Users online: <span id="userCount"></span></div>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="public/js/angular-v1.2.22.js"></script>
+    <script src="public/js/app.js"></script>
+    <script>
+      function TestCtrl($scope) {
+        $scope.title = 'Write a title here...';
+      };
+    </script>
+  </body>
+</html>
